@@ -9,9 +9,9 @@ const container = document.querySelector('.task_list');
 
 const list = [];
 
-for (let i = 0; i < list.length; i++) {
-  list[i].index = i;
-}
+list.forEach((item, i) => {
+  item.index = i;
+});
 
 const generateMarkup = (list, i) => {
   return `
